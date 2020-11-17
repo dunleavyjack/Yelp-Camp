@@ -1,6 +1,7 @@
 const { campgroundSchema, reviewSchema } = require('./schemas.js');
 const ExpressError = require('./utils/ExpressError')
 const Campground = require('./models/campground')
+const Review = require('./models/review')
 
 module.exports.isLoggedIn = (req, res, next) => {
     if (!req.isAuthenticated()) {
@@ -23,7 +24,7 @@ module.exports.isAuthor = async (req, res, next) => {
 
 module.exports.isReviewAuthor = async (req, res, next) => {
     const { id, reviewId } = req.params;
-    const campground = await Review.findById(id);
+    const review = await Review.findById(reviewId);
     if (!review.author.equals(req.user._id)) {
         req.flash('error', 'You do not have permission to do that!')
         return res.redirect(`/campgrounds/${id}`)
