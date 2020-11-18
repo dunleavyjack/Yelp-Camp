@@ -26,9 +26,18 @@ const seedDB = async () => {
             author: "5fb1ab4943ca5cc9ff6d88c3",
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)}  ${sample(places)}`,
-            image: 'https://source.unsplash.com/collection/483251', 
             description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vero nostrum enim laudantium illum eius! Accusantium qui quia obcaecati tenetur labore voluptates, illo eius sint, in veritatis maxime velit sit.',
-            price
+            price,
+            images: [
+                {
+                    url: 'https://res.cloudinary.com/dyrywfcej/image/upload/v1605674280/YelpCamp/fjp7eskxojlrg1knwnrr.jpg',
+                    filename: 'YelpCamp/fjp7eskxojlrg1knwnrr'
+                },
+                {
+                    url: 'https://res.cloudinary.com/dyrywfcej/image/upload/v1605674273/YelpCamp/ydhdykw3djefoe6ly3ha.jpg',
+                    filename: 'YelpCamp/ydhdykw3djefoe6ly3ha'
+                }
+            ]
         })
         await camp.save();
     }
