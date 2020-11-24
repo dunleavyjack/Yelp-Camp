@@ -89,6 +89,7 @@ const scriptSrcUrls = [
     "https://kit.fontawesome.com/",
     "https://cdnjs.cloudflare.com/",
     "https://cdn.jsdelivr.net",
+    "https://fonts.googleapis.com"
 ];
 const styleSrcUrls = [
     "https://kit-free.fontawesome.com/",
@@ -97,14 +98,18 @@ const styleSrcUrls = [
     "https://api.tiles.mapbox.com/",
     "https://fonts.googleapis.com/",
     "https://use.fontawesome.com/",
+
 ];
 const connectSrcUrls = [
     "https://api.mapbox.com/",
     "https://a.tiles.mapbox.com/",
     "https://b.tiles.mapbox.com/",
     "https://events.mapbox.com/",
+    "https://fonts.googleapis.com"
 ];
-const fontSrcUrls = [];
+const fontSrcUrls = [
+    "https://fonts.gstatic.com"
+];
 app.use(
     helmet.contentSecurityPolicy({
         directives: {
@@ -121,7 +126,10 @@ app.use(
                 "https://res.cloudinary.com/dyrywfcej/", //SHOULD MATCH YOUR CLOUDINARY ACCOUNT! 
                 "https://images.unsplash.com/",
             ],
-            fontSrc: ["'self'", ...fontSrcUrls],
+            fontSrc: [
+                "'self'", ...fontSrcUrls
+
+            ],
         },
     })
 );

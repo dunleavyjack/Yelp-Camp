@@ -7,3 +7,58 @@
     width: 100%;
     height: 300px;
 }
+
+.nav-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.nav-links {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.navbar-custom {
+    background-color: #181721;
+    color: white;
+}
+
+.site-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    font-weight: 800;
+}
+
+.nav-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 800;
+    color: white;
+}
+
+.nav-title:hover {
+    color: #db677e;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 200;
+    color: lightgrey;
+}
+.nav-link:hover {
+    color: #db677e;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #db677e!important;
+}
+
+.header-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+}
