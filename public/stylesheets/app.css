@@ -8,20 +8,23 @@
     height: 300px;
 }
 
+.navbar-toggler {
+    border-color: #db677e !important;
+}
+
+.navbar-toggler-icon {
+    color: #db677e !important; 
+}
+
 .nav-title {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     font-weight: 800;
 }
 
-.nav-links {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    font-weight: 600;
-}
 
 .navbar-custom {
-    background-color: #181721;
+    background-color: #181721 !important;
     color: white;
 }
 
@@ -35,18 +38,18 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     font-weight: 800;
-    color: white;
+    color:  white;
 }
 
 .nav-title:hover {
-    color: #db677e;
+    color: #db677e !important;
 }
 
-.nav-link {
+.nav-link .footer-text {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 200;
-    color: lightgrey;
+    color: lightgrey!important;
 }
 .nav-link:hover {
     color: #db677e;
@@ -61,4 +64,14 @@
     font-size: 1.5em;
     font-weight: 600;
     color: white;
+}
+
+.btn-outline-success {
+    color: #db677e;
+    border-color: #db677e !important;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: #db677e !important;
 }
