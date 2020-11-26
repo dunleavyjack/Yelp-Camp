@@ -12,9 +12,6 @@
     border-color: #db677e !important;
 }
 
-.navbar-toggler-icon {
-    color: #db677e !important; 
-}
 
 .nav-title {
     font-family: 'Montserrat', sans-serif;
@@ -55,7 +52,7 @@
     color: #db677e;
 }
 
-.nav-pills .nav-link.active {
+.nav-link.active {
     background-color: #db677e!important;
 }
 

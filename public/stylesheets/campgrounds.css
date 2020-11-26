@@ -4,3 +4,22 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.campground-card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.card{
+    background-color: rgb(202,210,211);
+}
+
+.view-btn{
+    background-color: #db677e;
+    border-color: #db677e;
+}
+
+.view-btn:hover{
+    background-color: #db677e;
+    border-color: #db677e;
+}
