@@ -1,11 +1,9 @@
 <% layout('layouts/boilerplate') %> 
 <div class="row">
-    <div class="col-6 offset-3">
+    <div class="col-6 offset-3 mt-5">
         <div class="alert alert-danger" role="alert">
-            <h4 class="alert-heading"><%=err.message%> </h4>
-            <% if (process.env.NODE_ENV !== err.message) {%> 
-            <p><%=err.stack %></p>
-            <% } %>     
+            <img class="img-fluid w-50 h-50" src="../stylesheets/error.png" alt="error">
+            <h4 class="alert-heading">Oops, something went wrong. Please try again.</h4>    
         </div>
     </div>
 </div>
