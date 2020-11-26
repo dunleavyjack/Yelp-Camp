@@ -1,14 +1,21 @@
 <% layout('layouts/boilerplate') %>
 <link rel="stylesheet" href="/stylesheets/campgrounds.css">
 
-
-<div id="cluster-map"></div>
+<div class="text-white mt-5 mb-5">
+    <h1 class="site-title">Find A Campground</h1>
+</div>
 
 <div class="container">
-    <h1>All Campgrounds</h1>
+    <div id="cluster-map">
+</div>
 
+<div class="text-white mt-5 mb-5">
+    <h1 class="site-title">See Them All</h1>
+</div>
+
+<div class="container">
     <% for(let campground of campgrounds){ %>
-    <div class="card mb-3">
+    <div class="card mb-3 mt-3">
         <div class="row">
             <div class="col-md-4">
                 <% if(campground.images.length){%>
