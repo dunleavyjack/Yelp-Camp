@@ -72,3 +72,9 @@
     color: white;
     background-color: #db677e !important;
 }
+
+.form-header {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    font-weight: 800; 
+}
