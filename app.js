@@ -43,7 +43,8 @@ db.once("open", () => {
 }); 
  
 const app = express();
- 
+
+
 app.engine('ejs', ejsMate)
 app.set('view engine', 'ejs'); 
 app.set('views', path.join(__dirname, 'views'))
@@ -166,6 +167,10 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about')
 });
+
+app.get('/signup', (req, res) => {
+    res.render('users/signup')
+})
 
 app.all('*', (req, res, next) => {
     next(new ExpressError('Page Not Found', 404))
