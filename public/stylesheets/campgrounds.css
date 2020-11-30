@@ -23,3 +23,7 @@ body {
     background-color: #db677e;
     border-color: #db677e;
 }
+
+.footer-text{
+    color: white !important;
+}
